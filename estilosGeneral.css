@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Tagesschrift';
+    src: url('Carpeta_Principal/fonts/Tagesschrift-Regular.ttf');
+    font-style: normal;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Tagesschrift', 'Arial', sans-serif;
+}
+/* ------------------------------------------------------------------- */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.menu-encabezado {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-encabezado li {
+    padding: 10px;
+    padding-right: 20px;
+    border-radius: 15px;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.menu-encabezado li:hover {
+    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+/* ------------------------------------------------------------------- */
+.opciones-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.social-links a i {
+    font-size: 40px;
+    margin-right: 15px;
+    padding: 10px;
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.social-links a i:hover {
+    transform: scale(1.2);
+    color: paleturquoise;
+}
+
+.fa-whatsapp {
+    color: #25D366;
+}
+
+.fa-tiktok {
+    color: #413f3f;
+}
+
+.fa-instagram {
+    color: #e13080;
+}
+
+.social-links i:hover {
+    color: #0077B5;
+}
+/* ------------------------------------------------------------------- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

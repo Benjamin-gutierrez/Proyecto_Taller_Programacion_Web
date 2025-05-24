@@ -1,0 +1,28 @@
+main .tabla {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #af4c4c;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}

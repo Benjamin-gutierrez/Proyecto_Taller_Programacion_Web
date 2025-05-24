@@ -1,0 +1,23 @@
+main {
+    justify-items: center;
+}
+
+.titulo {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.imagen {
+    height: 75vh;
+    width: 90vh;
+    padding: 10px;
+}
+
+.ubicacion {
+    text-decoration: none;
+}
+
+.horario {
+    text-align: center;
+    padding-bottom: 20px;
+}
