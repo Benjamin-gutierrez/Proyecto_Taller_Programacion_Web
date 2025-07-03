@@ -12,14 +12,21 @@
 </head>
 
 <body>
-    
-    <header>
-        <nav>
+
+    <header class="header">
+        <nav class="navbar">
             <img class="logo" src="/img/logotipo/logoMajala.jpeg" alt="logo">
+
+            <label class="labe_hamburguesa" for="menu_hamburguesa" aria-label="Abrir menú">
+                <i class="fa fa-bars"></i>
+            </label>
+
+            <input class="menu_hamburguesa" type="checkbox" id="menu_hamburguesa" />
+
             <ul class="menu-encabezado">
                 <li><a href="/Carpeta_Principal/index.html" class="opciones-link">INICIO</a></li>
-                <li><a href="../carta.html" class="opciones-link">CARTA</a></li>
-                <li><a href="" class="opciones-link">RESERVAS</a></li>
+                <li><a href="/Cartas/carta.html" class="opciones-link">CARTA</a></li>
+                <li><a href="#" class="opciones-link">RESERVAS</a></li>
                 <li><a href="/Contacto/contacto.html" class="opciones-link">CONTACTO</a></li>
                 <li><a href="/Ubicacion/ubicacion.html" class="opciones-link">UBICACIÓN</a></li>
             </ul>
@@ -30,7 +37,8 @@
         <section class="menu">
             <div>
                 <h2>CONOCE NUESTRA CARTA</h2>
-                <p><br>Explora nuestras deliciosas opciones, desde entradas hasta los mejores makis y bebidas. ¡Disfruta tu experiencia gastronómica!</p>
+                <p><br>Explora nuestras deliciosas opciones, desde entradas hasta los mejores makis y bebidas. ¡Disfruta
+                    tu experiencia gastronómica!</p>
                 <ul class="menu-carta">
                     <li><a href="/Cartas/SubCartas/entrada.html">ENTRADAS</a></li>
                     <li><a href="/Cartas/SubCartas/alitas.html">ALITAS</a></li>
@@ -49,13 +57,15 @@
 
     <footer>
         <div class="social-links">
-            <a href="https://wa.me/c/51928848621" target="_blank">
+            <a id="whatsapp" onclick="saludarWhatsapp()" href="https://wa.me/c/51928848621" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
-            <a href="https://www.tiktok.com/@majala.restaurant?_t=ZM-8wDzDHPihy2&_r=1" target="_blank">
+            <a id="tiktok" onclick="saludarTiktok()"
+                href="https://www.tiktok.com/@majala.restaurant?_t=ZM-8wDzDHPihy2&_r=1" target="_blank">
                 <i class="fa-brands fa-tiktok"></i>
             </a>
-            <a href="https://www.instagram.com/majalarest.piu?igsh=d3V6azY5cGxuNXNl" target="_blank">
+            <a id="instagram" onclick="saludarInstagram()"
+                href="https://www.instagram.com/majalarest.piu?igsh=d3V6azY5cGxuNXNl" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
             </a>
         </div>
