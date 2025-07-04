@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,10 @@
     <link rel="stylesheet" href="../carta.css">
     <link rel="stylesheet" href="estilosTablas.css">
 </head>
+
 <body>
+    <script src="menuData.js"></script>
+    <script src="menuController.js"></script>
     <header class="header">
         <nav class="navbar">
             <img class="logo" src="../../img/logotipo/logoMajala.jpeg" alt="logo">
@@ -18,7 +22,7 @@
                 <i class="fa fa-bars"></i>
             </label>
 
-            <input class="menu_hamburguesa" type="checkbox" id="menu_hamburguesa"/>
+            <input class="menu_hamburguesa" type="checkbox" id="menu_hamburguesa" />
 
             <ul class="menu-encabezado">
                 <li><a href="../../Carpeta_Principal/index.html" class="opciones-link">INICIO</a></li>
@@ -34,7 +38,8 @@
         <section class="menu">
             <div>
                 <h2 id="category-title">CONOCE NUESTRA CARTA</h2>
-                <p><br>Explora nuestras deliciosas opciones, desde entradas hasta los mejores makis y bebidas. ¡Disfruta tu experiencia gastronómica!</p>
+                <p><br>Explora nuestras deliciosas opciones, desde entradas hasta los mejores makis y bebidas. ¡Disfruta
+                    tu experiencia gastronómica!</p>
                 <ul class="menu-carta">
                     <li><a href="#" onclick="loadCategory('entrada')">ENTRADAS</a></li>
                     <li><a href="#" onclick="loadCategory('alitas')">ALITAS</a></li>
@@ -49,8 +54,7 @@
                 </ul>
             </div>
         </section>
-        
-        <!-- Contenedor dinámico para la tabla -->
+
         <div id="table-container">
             <table border="1" class="tabla">
                 <thead>
@@ -61,7 +65,7 @@
                     </tr>
                 </thead>
                 <tbody id="menu-tbody">
-                    <!-- Contenido generado dinámicamente -->
+
                 </tbody>
             </table>
         </div>
@@ -81,9 +85,6 @@
         </div>
         <p>&copy; MAJALA 2025 | Todos los derechos reservados.</p>
     </footer>
-
-    <!-- JavaScript con los datos y funcionalidad -->
-    <script src="menuData.js"></script>
-    <script src="menuController.js"></script>
 </body>
+
 </html>
