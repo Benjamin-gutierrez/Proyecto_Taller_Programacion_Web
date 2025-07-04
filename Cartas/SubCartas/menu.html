@@ -33,27 +33,38 @@
     <main>
         <section class="menu">
             <div>
-                <h2>CONOCE NUESTRA CARTA</h2>
+                <h2 id="category-title">CONOCE NUESTRA CARTA</h2>
                 <p><br>Explora nuestras deliciosas opciones, desde entradas hasta los mejores makis y bebidas. ¡Disfruta tu experiencia gastronómica!</p>
                 <ul class="menu-carta">
-                    <li><a href="entrada.html">ENTRADAS</a></li>
-                    <li><a href="alitas.html">ALITAS</a></li>
-                    <li><a href="salchivilla.html">SALCHIMOSTROS</a></li>
-                    <li><a href="ceviches.html">CEVICHES</a></li>
-                    <li><a href="criollazos.html">CRIOLLAZOS</a></li>
-                    <li><a href="makisC.html">MAKIS CLÁSICOS</a></li>
-                    <li><a href="makisE.html">MAKIS ESPECIALES</a></li>
-                    <li><a href="drinks.html">DRINKS</a></li>
-                    <li><a href="otrasBebidas.html">OTRAS BEBIDAS</a></li>
-                    <li><a href="combos.html">COMBOS MAKIS & ALITAS</a></li>
+                    <li><a href="#" onclick="loadCategory('entrada')">ENTRADAS</a></li>
+                    <li><a href="#" onclick="loadCategory('alitas')">ALITAS</a></li>
+                    <li><a href="#" onclick="loadCategory('salchivilla')">SALCHIMOSTROS</a></li>
+                    <li><a href="#" onclick="loadCategory('ceviches')">CEVICHES</a></li>
+                    <li><a href="#" onclick="loadCategory('criollazos')">CRIOLLAZOS</a></li>
+                    <li><a href="#" onclick="loadCategory('makisC')">MAKIS CLÁSICOS</a></li>
+                    <li><a href="#" onclick="loadCategory('makisE')">MAKIS ESPECIALES</a></li>
+                    <li><a href="#" onclick="loadCategory('drinks')">DRINKS</a></li>
+                    <li><a href="#" onclick="loadCategory('otrasBebidas')">OTRAS BEBIDAS</a></li>
+                    <li><a href="#" onclick="loadCategory('combos')">COMBOS MAKIS & ALITAS</a></li>
                 </ul>
             </div>
         </section>
         
-        <!-- La tabla se generará dinámicamente con JavaScript -->
-        <table border="1" class="tabla">
-            <!-- Contenido generado por menuData.js -->
-        </table>
+        <!-- Contenedor dinámico para la tabla -->
+        <div id="table-container">
+            <table border="1" class="tabla">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="menu-tbody">
+                    <!-- Contenido generado dinámicamente -->
+                </tbody>
+            </table>
+        </div>
     </main>
 
     <footer>
@@ -71,7 +82,8 @@
         <p>&copy; MAJALA 2025 | Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Incluir el archivo JavaScript con los datos -->
+    <!-- JavaScript con los datos y funcionalidad -->
     <script src="menuData.js"></script>
+    <script src="menuController.js"></script>
 </body>
 </html>
